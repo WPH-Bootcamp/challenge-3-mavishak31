@@ -6,196 +6,251 @@
     <title>Assignment 3 - Landing Page</title>
 
     <link rel="stylesheet" href="output.css" />
-  </head>
-  <body class="bg-black text-white">
-    <!-- ========== NAVBAR ========== -->
 
-    <section id="navbar">
-      <!-- header-menu -->
-      <div class="">
-        <h2>Tech.</h2>
-        <div>
-          <ul class="">
-            <li class="">About</li>
-            <li class="">Service</li>
-            <li class="">Our Work</li>
-            <li class="">Team</li>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-black text-[#FDFDFD] w-full box-border text-sm md:text-lg lg:text-2xl font-sans"
+  >
+    <!-- flex flex-col md:flex-row lg:flex-row -->
+    <!-- ========== NAVBAR ========== -->
+    <!-- NAVBAR CONTAINER -->
+    <section
+      id="navbar"
+      class="w-full h-16 border-b border-transparent rounded-none px-4 py-6 md:px-35 flex flex-row justify-between"
+    >
+      <!-- HEADER NAVBAR MENU -->
+      <div
+        class="w-full flex flex-row justify-between items-center text-2xl leading-8.5 mb-6"
+      >
+        <h2 class="font-bold text-2xl leading-9">Tech.</h2>
+        <nav>
+          <ul
+            class="hidden md:flex md:flex-row md:justify-between items-center gap-3"
+          >
+            <li class="navlist">About</li>
+            <li class="navlist">Service</li>
+            <li class="navlist">Our Work</li>
+            <li class="navlist">Team</li>
           </ul>
-        </div>
-        <button class="">Contact Us</button>
-        <label for="menu-toggle" class="">
+        </nav>
+        <!-- BUTTON CONTACT US HEADER -->
+        <button
+          class="hidden w-40 h-11 rounded-full p-2 gap-1 items-center justify-center mt-3 bg-[#421abc] text-[16px] font-semibold leading-7.5 tracking-[-0.03em] md:flex md:flex-row"
+        >
+          Contact Us
+        </button>
+        <!-- ICON SIDE BAR MENU HAMBURGER -->
+        <label
+          for="menu-toggle"
+          class="text-2xl cursor-pointer inline-block gap-2 md:hidden"
+        >
           <img
-            src="../assets/images/menu-icon.png"
+            src="../assets/icons/menu-icon.png"
             alt="icon menu"
             id="icon-menu"
+            class="rounded-none"
           />
         </label>
       </div>
     </section>
 
     <!-- ========== HERO SECTION ========== -->
-    <section id="hero">
-      <div class="">
-        <div class="">
-          <div class="">
-            <h1>
-              Build with the <span style="font-style: italic">Future</span>.
-            </h1>
-            <p>
-              <span class=""
-                >From building sleek websites and mobile apps to integrating AI
-                solutions, we help brands turn ideas into powerful digital
-                experiences that connect, engage, and scale.
-              </span>
-            </p>
-          </div>
-          <button class="">Let's Talk</button>
-        </div>
-        <div class="">
-          <img src="../assets/images/hero finger.png" class="" />
-
-          <div class="">
-            <img src="../assets/images/hero screen phone.png" class="" />
-            <div class="">
-              <img src="../assets/images/hero screen border.png" class="" />
-            </div>
-            <div class="">
-              <img
-                src="../assets/images/hero cover gradient design.png"
-                class=""
-              />
-            </div>
-          </div>
-          <img src="../assets/images/hero hand holding.png" class="" />
-        </div>
+    <section
+      id="hero"
+      class="w-full px-5 pt-10 gap-4.5 items-center bg-linear-to-t from-[#210A5E4D] to-black flex flex-col md:flex-row lg:flex-row md:px-35"
+    >
+      <div class="gap-6 md:w-171.75 md:gap-12">
+        <h1
+          class="text-[40px] mb-3 gap-4 md:text-[56px] md:leading-17 md:gap-4 font-bold"
+        >
+          Build with the <span class="italic">Future</span>.
+        </h1>
+        <p
+          class="text-[16px] text-[#717680] mb-3 gap-4 md:text-[20px] md:leading-8.5 md:mb-5 md:gap-4"
+        >
+          From building sleek websites and mobile apps to integrating AI
+          solutions, we help brands turn ideas into powerful digital experiences
+          that connect, engage, and scale.
+        </p>
+        <button
+          class="w-full h-12 font-semibold bg-[#421ABC] rounded-full p-2 gap-1 md:w-75 md:h-12 md:p-2 md:gap-1 md:text-[16px] md:leading-7.5 md:mb-4 tracking-[-0.03em]"
+        >
+          Let's Talk
+        </button>
+      </div>
+      <div class="flex justify-center items-center">
+        <img
+          src="../assets/images/Group 15861.png"
+          alt="technology by tech"
+          class="w-full max-w-sm md:w-full md:max-w-xl md:min-w-87.5 object-cover"
+        />
       </div>
     </section>
 
     <!-- SECTION SIDEBAR MENU -->
     <section id="sidebar">
       <!-- SIDEBAR MENU checkbox (disembunyikan) -->
-      <input type="checkbox" id="menu-toggle" hidden />
+      <input type="checkbox" id="menu-toggle" class="peer hidden" />
 
       <!-- tombol hamburger -->
       <!-- <label for="menu-toggle" class="menu-btn">☰</label> -->
 
-      <!-- sidebar -->
-      <div class="">
-        <div class="">
-          <h2>Tech.</h2>
-          <label for="menu-toggle" class="">✕</label>
-        </div>
-        <!-- <div class="menu-sidebar"> -->
-        <ul class="">
-          <li class="">About</li>
-          <li class="">Service</li>
-          <li class="">Our Work</li>
-          <li class="">Team</li>
+      <!-- SIDEBAR -->
 
-          <button class="">Contact Us</button>
+      <div
+        class="fixed top-0 -right-full w-98.5 h-full bg-black peer-checked:right-0 transition duration-300 ease-in-out gap-3"
+      >
+        <div
+          class="w-full h-16 border-b border-transparent rounded-none px-4 py-6 mb-6 flex flex-row justify-between items-center"
+        >
+          <h2 class="font-bold text-2xl leading-9 mt-1 mb-6">Tech.</h2>
+          <label
+            for="menu-toggle"
+            class="text-xl cursor-pointer flex flex-row-reverse mb-5 gap-2"
+          >
+            <!-- ICON CLOSE MENU SIDEBAR -->
+            <img
+              src="../assets/icons/xclose-icon.png"
+              alt="icon close menu"
+              id="icon-x-menu"
+              class="w-6 h-6 rounded-none"
+            />
+            <!-- ICON CLOSE MENU SIDEBAR -->
+          </label>
+        </div>
+        <!-- MENU LIST SIDEBAR -->
+        <ul
+          class="absolute flex flex-col w-90.25 top-20 left-4 gap-3 text-sm leading-7"
+        >
+          <li class="sidelist">About</li>
+          <li class="sidelist">Service</li>
+          <li class="sidelist">Our Work</li>
+          <li class="sidelist">Team</li>
+
+          <button
+            class="w-full h-12 font-semibold text-sm leading-7 bg-[#421ABC] rounded-full p-2 gap-1"
+          >
+            Contact Us
+          </button>
         </ul>
         <!-- </div> -->
       </div>
 
       <!-- SIDEBAR MENU checkbox (disembunyikan) -->
-      <input type="checkbox" id="menu-toggle" hidden />
+      <input type="checkbox" id="menu-toggle" class="peer hidden" />
     </section>
     <!-- SECTION SIDEBAR MENU END -->
 
     <!-- Section Who We Are -->
     <section id="whoweare">
-      <div class="">
-        <h1>Who We Are</h1>
-        <p>
-          <span class=""> We're a group of tech students trained in </span>
+      <div
+        class="flex flex-col text-center font-semibold text-[28px] leading-7 mb-4.5 px-5 py-10 gap-4 md:px-35 md:py-20 md:gap-8"
+      >
+        <h1
+          class="font-bold text-[28px] leading-9.5 mb-7 tracking-[-0.02em] md:text-[40px] md:leading-14 md:mb-10 md:tracking-[-0.03em]"
+        >
+          Who We Are
+        </h1>
+        <p class="font-semibold text-[18px] leading-7 mb-4.5">
+          <span class="grey-text">
+            We're a group of tech students trained in
+          </span>
           building real-world digital products.
-          <span class="">From coding to design, we</span> craft modern solutions
-          for modern problems.
+          <span class="grey-text">From coding to design, we</span> craft modern
+          solutions for modern problems.
         </p>
       </div>
     </section>
 
     <!-- SECTION What We Do -->
     <section id="whatwedo">
-      <div class="">
-        <div class="">
-          <h1>What We Do</h1>
-          <span class=""
+      <!-- WHAT WE DO CONTAINER -->
+      <div
+        class="flex flex-col w-95 px-4 py-10 gap-6 md:w-full md:flex md:flex-col md:px-35 md:py-20 md:gap-16"
+      >
+        <!-- Header -->
+        <div class="flex flex-col text-center gap-2 md:gap-4">
+          <h1
+            class="font-bold text-[28px] leading-9.5 tracking-[-0.02em] mb-7 md:text-[40px] md:leading-14 md:tracking-[-0.03em]"
+          >
+            What We Do
+          </h1>
+          <span class="grey-text text-sm leading-7 mb-3 tracking-[-0.03em]"
             >We offer simple tech solutions to help your ideas grow.</span
           >
         </div>
-        <div class="">
-          <div class="">
-            <div class="">
-              <div class="">
+        <!-- SERVICES CONTAINER -->
+        <div class="flex flex-col gap-4 md:gap-5">
+          <!-- SERVICES LIST -->
+          <div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-5">
+            <!-- SERVICES CARDS -->
+            <div class="services-cards">
+              <div class="icon-cards">
                 <img
-                  src="../assets/images/icon-Website.png"
+                  src="../assets/icons/icon-Website.png"
                   alt="icon picture"
                 />
               </div>
-              <h2>Web Development</h2>
-              <span class=""
+              <h2 class="services-h2">Web Development</h2>
+              <span class="grey-text"
                 >Modern websites using HTML, CSS, JavaScript, and
                 frameworks.</span
               >
             </div>
-            <div class="">
-              <div class="">
-                <img
-                  src="../assets/images/icon-mobile.png"
-                  alt="icon picture"
-                />
+            <div class="services-cards">
+              <div class="icon-cards">
+                <img src="../assets/icons/icon-mobile.png" alt="icon picture" />
               </div>
-              <h2>App Development</h2>
-              <span class=""
+              <h2 class="services-h2">App Development</h2>
+              <span class="grey-text"
                 >Mobile and desktop apps tailored for your needs</span
               >
             </div>
 
-            <div class="">
-              <div class="">
-                <img
-                  src="../assets/images/icon-AI (2).png"
-                  alt="icon picture"
-                />
+            <div class="services-cards">
+              <div class="icon-cards">
+                <img src="../assets/icons/icon-AI (2).png" alt="icon picture" />
               </div>
-              <h2>AI Integration</h2>
-              <span class=""
+              <h2 class="services-h2">AI Integration</h2>
+              <span class="grey-text"
                 >Smart solutions using AI-powered tools and automation.</span
               >
             </div>
-            <div class="">
-              <div class="">
-                <img src="../assets/images/icon-UIUX.png" alt="icon picture" />
+            <div class="services-cards">
+              <div class="icon-cards">
+                <img src="../assets/icons/icon-UIUX.png" alt="icon picture" />
               </div>
-              <h2>UI/UX Design</h2>
-              <span class=""
+              <h2 class="services-h2">UI/UX Design</h2>
+              <span class="grey-text"
                 >Clean and functional designs for better user experience.</span
               >
             </div>
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- <div class="services-container"> -->
-            <!-- <div class="services-list"> -->
-            <div class="">
-              <div class="">
+
+            <div class="services-cards">
+              <div class="icon-cards">
                 <img
-                  src="../assets/images/icon-landing.png"
+                  src="../assets/icons/icon-landing.png"
                   alt="icon picture"
                 />
               </div>
-              <h2>Landing Page Design</h2>
-              <span class=""
+              <h2 class="services-h2">Landing Page Design</h2>
+              <span class="grey-text"
                 >High-converting landing pages for your product or
                 business.</span
               >
             </div>
-            <div class="">
-              <div class="">
-                <img src="../assets/images/icon-CMS.png" alt="icon picture" />
+            <div class="services-cards">
+              <div class="icon-cards">
+                <img src="../assets/icons/icon-CMS.png" alt="icon picture" />
               </div>
-              <h2>CMS Integration</h2>
-              <span class=""
+              <h2 class="services-h2">CMS Integration</h2>
+              <span class="grey-text"
                 >Easy-to-manage websites with WordPress or Webflow.</span
               >
             </div>
