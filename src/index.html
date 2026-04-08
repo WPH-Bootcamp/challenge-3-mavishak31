@@ -15,14 +15,14 @@
     />
   </head>
   <body
-    class="bg-black text-[#FDFDFD] w-full box-border text-sm md:text-lg lg:text-2xl font-sans"
+    class="bg-black text-[#FDFDFD] w-full box-border text-sm lg:text-lg lg:text-2xl font-sans"
   >
-    <!-- flex flex-col md:flex-row lg:flex-row -->
+    <!-- flex flex-col lg:flex-row lg:flex-row -->
     <!-- ========== NAVBAR ========== -->
     <!-- NAVBAR CONTAINER -->
     <section
       id="navbar"
-      class="w-full h-16 border-b border-transparent rounded-none px-4 py-6 md:px-35 flex flex-row justify-between"
+      class="w-full h-16 border-b border-transparent rounded-none px-4 py-6 lg:px-35 flex flex-row justify-between"
     >
       <!-- HEADER NAVBAR MENU -->
       <div
@@ -31,7 +31,7 @@
         <h2 class="font-bold text-2xl leading-9">Tech.</h2>
         <nav>
           <ul
-            class="hidden md:flex md:flex-row md:justify-between items-center gap-3"
+            class="hidden lg:flex lg:flex-row lg:justify-between items-center gap-3"
           >
             <li class="navlist">About</li>
             <li class="navlist">Service</li>
@@ -41,18 +41,18 @@
         </nav>
         <!-- BUTTON CONTACT US HEADER -->
         <button
-          class="hidden w-40 h-11 rounded-full p-2 gap-1 items-center justify-center mt-3 bg-[#421abc] text-[16px] font-semibold leading-7.5 tracking-[-0.03em] md:flex md:flex-row"
+          class="hidden w-40 h-11 rounded-full p-2 gap-1 items-center justify-center mt-3 bg-[#421abc] text-[16px] font-semibold leading-7.5 tracking-[-0.03em] lg:flex lg:flex-row"
         >
           Contact Us
         </button>
         <!-- ICON SIDE BAR MENU HAMBURGER -->
         <label
           for="menu-toggle"
-          class="text-2xl cursor-pointer inline-block gap-2 md:hidden"
+          class="text-2xl cursor-pointer inline-block gap-2 lg:hidden"
         >
           <img
             src="../assets/icons/menu-icon.png"
-            alt="icon menu"
+            alt="icon menu image is not displayed"
             id="icon-menu"
             class="rounded-none"
           />
@@ -63,23 +63,23 @@
     <!-- ========== HERO SECTION ========== -->
     <section
       id="hero"
-      class="w-full px-5 pt-10 gap-4.5 items-center bg-linear-to-t from-[#210A5E4D] to-black flex flex-col md:flex-row lg:flex-row md:px-35"
+      class="w-full px-5 pt-10 gap-4.5 items-center bg-linear-to-t from-[#210A5E4D] to-black flex flex-col lg:flex-row lg:flex-row lg:px-35"
     >
-      <div class="gap-6 md:w-171.75 md:gap-12">
+      <div class="gap-6 lg:w-171.75 lg:gap-12">
         <h1
-          class="text-[40px] mb-3 gap-4 md:text-[56px] md:leading-17 md:gap-4 font-bold"
+          class="text-[40px] mb-3 gap-4 lg:text-[56px] lg:leading-17 lg:gap-4 font-bold"
         >
           Build with the <span class="italic">Future</span>.
         </h1>
         <p
-          class="text-[16px] text-[#717680] mb-3 gap-4 md:text-[20px] md:leading-8.5 md:mb-5 md:gap-4"
+          class="text-[16px] text-[#717680] mb-3 gap-4 lg:text-[20px] lg:leading-8.5 lg:mb-5 lg:gap-4"
         >
           From building sleek websites and mobile apps to integrating AI
           solutions, we help brands turn ideas into powerful digital experiences
           that connect, engage, and scale.
         </p>
         <button
-          class="w-full h-12 font-semibold bg-[#421ABC] rounded-full p-2 gap-1 md:w-75 md:h-12 md:p-2 md:gap-1 md:text-[16px] md:leading-7.5 md:mb-4 tracking-[-0.03em]"
+          class="w-full h-12 font-semibold bg-[#421ABC] rounded-full p-2 gap-1 lg:w-75 lg:h-12 lg:p-2 lg:gap-1 lg:text-[16px] lg:leading-7.5 lg:mb-4 tracking-[-0.03em]"
         >
           Let's Talk
         </button>
@@ -87,29 +87,25 @@
       <div class="flex justify-center items-center">
         <img
           src="../assets/images/Group 15861.png"
-          alt="technology by tech"
-          class="w-full max-w-sm md:w-full md:max-w-xl md:min-w-87.5 object-cover"
+          alt="phone content image is not displayed"
+          class="w-full max-w-sm lg:w-full lg:max-w-xl lg:min-w-87.5 object-cover"
         />
       </div>
     </section>
 
     <!-- SECTION SIDEBAR MENU -->
     <section id="sidebar">
-      <!-- SIDEBAR MENU checkbox (disembunyikan) -->
+      <!-- SIDEBAR MENU checkbox (disembunyikan) untuk label menu sidebar -->
       <input type="checkbox" id="menu-toggle" class="peer hidden" />
 
-      <!-- tombol hamburger -->
-      <!-- <label for="menu-toggle" class="menu-btn">☰</label> -->
-
       <!-- SIDEBAR -->
-
       <div
         class="fixed top-0 -right-full w-98.5 h-full bg-black peer-checked:right-0 transition duration-300 ease-in-out gap-3"
       >
         <div
           class="w-full h-16 border-b border-transparent rounded-none px-4 py-6 mb-6 flex flex-row justify-between items-center"
         >
-          <h2 class="font-bold text-2xl leading-9 mt-1 mb-6">Tech.</h2>
+          <h2 class="font-bold text-2xl leading-9 mb-6">Tech.</h2>
           <label
             for="menu-toggle"
             class="text-xl cursor-pointer flex flex-row-reverse mb-5 gap-2"
@@ -117,7 +113,7 @@
             <!-- ICON CLOSE MENU SIDEBAR -->
             <img
               src="../assets/icons/xclose-icon.png"
-              alt="icon close menu"
+              alt="icon close menu image is not displayed"
               id="icon-x-menu"
               class="w-6 h-6 rounded-none"
             />
@@ -126,12 +122,12 @@
         </div>
         <!-- MENU LIST SIDEBAR -->
         <ul
-          class="absolute flex flex-col w-90.25 top-20 left-4 gap-3 text-sm leading-7"
+          class="absolute flex flex-col w-90.25 mt-5 ml-4 gap-3 text-sm leading-7"
         >
-          <li class="sidelist">About</li>
-          <li class="sidelist">Service</li>
-          <li class="sidelist">Our Work</li>
-          <li class="sidelist">Team</li>
+          <li class="sidelist"><span class="ml-3">About</span></li>
+          <li class="sidelist"><span class="ml-3">Service</span></li>
+          <li class="sidelist"><span class="ml-3">Our Work</span></li>
+          <li class="sidelist"><span class="ml-3">Team</span></li>
 
           <button
             class="w-full h-12 font-semibold text-sm leading-7 bg-[#421ABC] rounded-full p-2 gap-1"
@@ -139,246 +135,390 @@
             Contact Us
           </button>
         </ul>
-        <!-- </div> -->
       </div>
-
-      <!-- SIDEBAR MENU checkbox (disembunyikan) -->
-      <input type="checkbox" id="menu-toggle" class="peer hidden" />
     </section>
     <!-- SECTION SIDEBAR MENU END -->
 
-    <!-- Section Who We Are -->
-    <section id="whoweare">
-      <div
-        class="flex flex-col text-center font-semibold text-[28px] leading-7 mb-4.5 px-5 py-10 gap-4 md:px-35 md:py-20 md:gap-8"
-      >
-        <h1
-          class="font-bold text-[28px] leading-9.5 mb-7 tracking-[-0.02em] md:text-[40px] md:leading-14 md:mb-10 md:tracking-[-0.03em]"
+    <!-- MAIN SECTION -->
+    <main>
+      <!-- Section Who We Are -->
+      <section id="whoweare">
+        <div
+          class="flex flex-col text-center px-5 py-10 gap-4 lg:px-35 lg:py-20 lg:gap-8"
         >
-          Who We Are
-        </h1>
-        <p class="font-semibold text-[18px] leading-7 mb-4.5">
-          <span class="grey-text">
-            We're a group of tech students trained in
-          </span>
-          building real-world digital products.
-          <span class="grey-text">From coding to design, we</span> craft modern
-          solutions for modern problems.
-        </p>
-      </div>
-    </section>
-
-    <!-- SECTION What We Do -->
-    <section id="whatwedo">
-      <!-- WHAT WE DO CONTAINER -->
-      <div
-        class="flex flex-col w-95 px-4 py-10 gap-6 md:w-full md:flex md:flex-col md:px-35 md:py-20 md:gap-16"
-      >
-        <!-- Header -->
-        <div class="flex flex-col text-center gap-2 md:gap-4">
+          <!-- title -->
           <h1
-            class="font-bold text-[28px] leading-9.5 tracking-[-0.02em] mb-7 md:text-[40px] md:leading-14 md:tracking-[-0.03em]"
+            class="font-bold text-[28px] leading-9.5 mb-7 tracking-[-0.02em] lg:text-[40px] lg:leading-14 lg:mb-10 lg:tracking-[-0.03em]"
           >
-            What We Do
+            Who We Are
           </h1>
-          <span class="grey-text text-sm leading-7 mb-3 tracking-[-0.03em]"
-            >We offer simple tech solutions to help your ideas grow.</span
+          <!-- content -->
+          <p class="font-semibold text-[18px] leading-7 mb-4.5">
+            <span class="grey-text">
+              We're a group of tech students trained in
+            </span>
+            building real-world digital products.
+            <span class="grey-text">From coding to design, we</span> craft
+            modern solutions for modern problems.
+          </p>
+        </div>
+      </section>
+      <!-- SECTION WHO WE ARE DONE RESPONSIVE -->
+
+      <!-- SECTION What We Do -->
+      <!-- pada what we do content saya sesuaikan dengan figma width nya fixed n tidak full dan center nya sesuai juga, jadi tidak pas di tengah banget untuk tampilan mobile nya -->
+      <section id="whatwedo">
+        <!-- WHAT WE DO CONTAINER -->
+        <div
+          class="flex flex-col w-95 px-4 py-10 gap-6 lg:w-full lg:flex lg:flex-col lg:px-35 lg:py-20 lg:gap-16"
+        >
+          <!-- Header -->
+          <div class="flex flex-col text-center gap-2 lg:gap-4">
+            <!-- title -->
+            <h1
+              class="font-bold text-[28px] leading-9.5 tracking-[-0.02em] mb-7 lg:text-[40px] lg:leading-14 lg:tracking-[-0.03em]"
+            >
+              What We Do
+            </h1>
+            <!-- content -->
+            <span class="grey-text text-sm leading-7 mb-3.5 tracking-[-0.03em]"
+              >We offer simple tech solutions to help your ideas grow.</span
+            >
+          </div>
+          <!-- SERVICES CONTAINER (WHAT WE DO CONTENT) -->
+          <div class="flex flex-col gap-4 lg:gap-5">
+            <!-- SERVICES LIST -->
+            <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-5">
+              <!-- SERVICES CARDS -->
+              <!-- card1 -->
+              <div class="services-cards">
+                <div class="icon-cards">
+                  <img
+                    src="../assets/icons/icon-Website.png"
+                    alt="icon website image is not displayed"
+                  />
+                </div>
+                <h2 class="services-h2">Web Development</h2>
+                <span class="grey-text"
+                  >Modern websites using HTML, CSS, JavaScript, and
+                  frameworks.</span
+                >
+              </div>
+              <!-- card2 -->
+              <div class="services-cards">
+                <div class="icon-cards">
+                  <img
+                    src="../assets/icons/icon-mobile.png"
+                    alt="icon mobile image is not displayed"
+                  />
+                </div>
+                <h2 class="services-h2">App Development</h2>
+                <span class="grey-text"
+                  >Mobile and desktop apps tailored for your needs</span
+                >
+              </div>
+              <!-- card3 -->
+              <div class="services-cards">
+                <div class="icon-cards">
+                  <img
+                    src="../assets/icons/icon-AI (2).png"
+                    alt="icon ai image is not displayed"
+                  />
+                </div>
+                <h2 class="services-h2">AI Integration</h2>
+                <span class="grey-text"
+                  >Smart solutions using AI-powered tools and automation.</span
+                >
+              </div>
+              <!-- card4 -->
+              <div class="services-cards">
+                <div class="icon-cards">
+                  <img
+                    src="../assets/icons/icon-UIUX.png"
+                    alt="icon uiux image is not displayed"
+                  />
+                </div>
+                <h2 class="services-h2">UI/UX Design</h2>
+                <span class="grey-text"
+                  >Clean and functional designs for better user
+                  experience.</span
+                >
+              </div>
+              <!-- card5 -->
+              <div class="services-cards">
+                <div class="icon-cards">
+                  <img
+                    src="../assets/icons/icon-landing.png"
+                    alt="icon landing image is not displayed"
+                  />
+                </div>
+                <h2 class="services-h2">Landing Page Design</h2>
+                <span class="grey-text"
+                  >High-converting landing pages for your product or
+                  business.</span
+                >
+              </div>
+              <!-- card6 -->
+              <div class="services-cards">
+                <div class="icon-cards">
+                  <img src="../assets/icons/icon-CMS.png" alt="icon picture" />
+                </div>
+                <h2 class="services-h2">CMS Integration</h2>
+                <span class="grey-text"
+                  >Easy-to-manage websites with WordPress or Webflow.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION WHAT WE DO DONE RESPONSIVE -->
+
+      <!-- SECTION Our Work -->
+      <section id="ourwork">
+        <div
+          class="flex flex-col w-98.25 px-5 py-10 gap-6 lg:w-full lg:px-35 lg:py-20 lg:gap-16"
+        >
+          <div class="flex flex-col items-center gap-2 lg:gap-4">
+            <!-- title -->
+            <h1
+              class="font-bold text-[28px] leading-9.5 tracking-[-0.02em] lg:text-[40px] lg:leading-14 lg:tracking-[-0.03em]"
+            >
+              Our Work
+            </h1>
+            <!-- content -->
+            <span
+              class="grey-text text-[16px] leading-7.5 mb-4 tracking-[-0.03em] lg:text-[18px] lg:leading-8 lg:mb-4.5"
+              >See what we’ve built with passion and purpose</span
+            >
+          </div>
+          <!-- OUR WORK CONTENT -->
+          <div
+            class="flex flex-col gap-5 lg:flex lg:flex-row lg:justify-center lg:gap-5"
           >
+            <div class="flex flex-col w-90.25 gap-3.25 lg:w-93.25 lg:gap-5">
+              <!-- image1 -->
+              <img
+                src="../assets/images/porto1.png"
+                alt="porto image 1 - image is not displayed"
+                class="w-90.25 h-90.25 rounded-2xl lg:min-w-62.5 lg:w-93.25 lg:h-93.25"
+              />
+              <!-- text1 -->
+              <p
+                class="font-bold text-[16px] leading-7.5 mb-4 tracking-[-0.02em] lg:text-xl lg:leading-8.5 lg:mb-5 lg:tracking-[-0.03em]"
+              >
+                Portofolio 1
+              </p>
+            </div>
+            <div class="flex flex-col w-90.25 gap-3.25">
+              <!-- image2 -->
+              <img
+                src="../assets/images/porto2.png"
+                alt="porto image 2 - image is not displayed"
+                class="w-90.25 h-90.25 rounded-2xl lg:min-w-62.5 lg:w-93.25 lg:h-93.25"
+              />
+              <!-- text2 -->
+              <p
+                class="font-bold text-[16px] leading-7.5 mb-4 tracking-[-0.02em] lg:text-xl lg:leading-8.5 lg:mb-5 lg:tracking-[-0.03em]"
+              >
+                Portofolio 2
+              </p>
+            </div>
+            <div class="flex flex-col w-90.25 gap-3.25">
+              <!-- image3 -->
+              <img
+                src="../assets/images/porto3.png"
+                alt="porto image 3 - image is not displayed"
+                class="w-90.25 h-90.25 rounded-2xl lg:min-w-62.5 lg:w-93.25 lg:h-93.25"
+              />
+              <!-- text3 -->
+              <p
+                class="font-bold text-[16px] leading-7.5 mb-4 tracking-[-0.02em] lg:text-xl lg:leading-8.5 lg:mb-5 lg:tracking-[-0.03em]"
+              >
+                Portofolio 3
+              </p>
+            </div>
+          </div>
         </div>
-        <!-- SERVICES CONTAINER -->
-        <div class="flex flex-col gap-4 md:gap-5">
-          <!-- SERVICES LIST -->
-          <div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-5">
-            <!-- SERVICES CARDS -->
-            <div class="services-cards">
-              <div class="icon-cards">
+      </section>
+      <!-- SECTION OUR WORK DONE RESPONSIVE -->
+
+      <!-- SECTION Meet The Team -->
+      <section id="meettheteam">
+        <div
+          class="flex flex-col w-98.25 px-5 py-10 gap-8 lg:w-full lg:text-center lg:px-35 lg:py-20 lg:gap-16"
+        >
+          <div class="flex flex-col items-center text-center gap-2 lg:gap-4">
+            <!-- title -->
+            <h1
+              class="font-bold text-[28px] leading-9.5 mb-7 tracking-[-0.02em] lg:text-[40px] lg:leading-14 lg:mb-10 lg:tracking-[-0.03em]"
+            >
+              Meet the Team
+            </h1>
+            <!-- content -->
+            <span
+              class="grey-text text-[16px] leading-7.5 mb-4 tracking-[-0.03em] lg:text-[18px] lg:leading-8 lg:mb-4.5 lg:tracking-[-0.03em]"
+              >A group of future-ready tech makers.</span
+            >
+          </div>
+          <!-- MEET THE TEAM CONTENT -->
+          <div
+            class="flex flex-col gap-6 lg:flex lg:flex-row lg:justify-center lg:gap-14"
+          >
+            <div class="flex flex-row justify-center gap-5 lg:gap-14">
+              <!-- TEAM LIST -->
+              <!-- member1 -->
+              <div
+                class="flex flex-col items-center text-center gap-3 lg:w-55 lg:gap-5"
+              >
+                <!-- member image -->
                 <img
-                  src="../assets/icons/icon-Website.png"
-                  alt="icon picture"
+                  src="../assets/images/member Jasper kim.png"
+                  alt="member picture image is not displayed"
+                  class="w-40 h-40 rounded-full lg:w-55 lg:h-55"
+                />
+                <!-- member content name -->
+                <div class="flex flex-col gap-1">
+                  <h4 class="team-member-name">Jasper Kim</h4>
+                  <span class="grey-text team-member-do">Project Manager</span>
+                </div>
+              </div>
+              <!-- member2 -->
+              <div
+                class="flex flex-col items-center text-center gap-3 lg:w-55 lg:gap-5"
+              >
+                <!-- member image -->
+                <img
+                  src="../assets/images/member Alex Jonathan.png"
+                  alt="member picture image is not displayed"
+                  class="w-40 h-40 rounded-full lg:w-55 lg:h-55"
+                />
+                <!-- member content name -->
+                <div class="flex flex-col gap-1">
+                  <h4 class="team-member-name">Alex Jonathan</h4>
+                  <span class="grey-text team-member-do"
+                    >Full-stack Developer</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-row justify-center gap-5 lg:gap-14">
+              <!-- member3 -->
+              <div
+                class="flex flex-col items-center text-center gap-3 lg:w-55 lg:gap-5"
+              >
+                <!-- member image -->
+                <img
+                  src="../assets/images/member Mario Lopez.png"
+                  alt="member picture image is not displayed"
+                  class="w-40 h-40 rounded-full lg:w-55 lg:h-55"
+                />
+                <!-- member content name -->
+                <div class="flex flex-col gap-1">
+                  <h4 class="team-member-name">Mario Lopez</h4>
+                  <span class="grey-text team-member-do">UI/UX Designer</span>
+                </div>
+              </div>
+              <!-- member4 -->
+              <div
+                class="flex flex-col items-center text-center gap-3 lg:w-55 lg:gap-5"
+              >
+                <!-- member image -->
+                <img
+                  src="../assets/images/member Jasper Kim 2.png"
+                  alt="member picture image is not displayed"
+                  class="w-40 h-40 rounded-full lg:w-55 lg:h-55"
+                />
+                <!-- member content name -->
+                <div class="flex flex-col gap-1">
+                  <h4 class="team-member-name">Jasper Kim</h4>
+                  <span class="grey-text team-member-do">Data Scientist</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION MEET THE TEAM DONE RESPONSIVE -->
+
+      <!-- SECTION Collaboration -->
+      <section id="letscollab">
+        <!-- width nya saya bikin full biar pas responsive ga patah pindah nya -->
+        <div
+          class="flex flex-col w-98.25 px-5 py-10 gap-6 lg:items-center lg:w-full lg:px-35 lg:pt-20 lg:pb-30"
+        >
+          <div class="flex flex-col items-center text-center gap-2 lg:gap-4">
+            <!-- title -->
+            <h1
+              class="font-bold text-[28px] leading-9.5 mb-7 tracking-[-0.02em] lg:text-[40px] lg:leading-14 lg:mb-10 lg:tracking-[-0.03em]"
+            >
+              Let's Collaborate
+            </h1>
+            <span
+              class="grey-text text-[16px] leading-7.5 mb-4 tracking-[-0.03em] lg:text-[18px] lg:leading-8 lg:mb-4.5 lg:tracking-[-0.03em]"
+              >Need a tech team? We're ready to help</span
+            >
+          </div>
+          <!-- FORM COLLABORATION -->
+          <!-- form container -->
+          <div class="flex flex-col justify-center gap-8 lg:w-148 lg:gap-10">
+            <!-- form fields -->
+            <div class="gap-8 lg:gap-5">
+              <div class="form-group">
+                <!-- name -->
+                <label
+                  class="block text-xs mb-1.5 text-[#ccc] lg:text-sm lg:leading-7 lg:mb-3.5"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="w-full h-12 px-4 py-2 border border-[#252b37] rounded-xl bg-transparent outline-none placeholder:text-[#717680] lg:gap-2"
                 />
               </div>
-              <h2 class="services-h2">Web Development</h2>
-              <span class="grey-text"
-                >Modern websites using HTML, CSS, JavaScript, and
-                frameworks.</span
-              >
-            </div>
-            <div class="services-cards">
-              <div class="icon-cards">
-                <img src="../assets/icons/icon-mobile.png" alt="icon picture" />
-              </div>
-              <h2 class="services-h2">App Development</h2>
-              <span class="grey-text"
-                >Mobile and desktop apps tailored for your needs</span
-              >
-            </div>
-
-            <div class="services-cards">
-              <div class="icon-cards">
-                <img src="../assets/icons/icon-AI (2).png" alt="icon picture" />
-              </div>
-              <h2 class="services-h2">AI Integration</h2>
-              <span class="grey-text"
-                >Smart solutions using AI-powered tools and automation.</span
-              >
-            </div>
-            <div class="services-cards">
-              <div class="icon-cards">
-                <img src="../assets/icons/icon-UIUX.png" alt="icon picture" />
-              </div>
-              <h2 class="services-h2">UI/UX Design</h2>
-              <span class="grey-text"
-                >Clean and functional designs for better user experience.</span
-              >
-            </div>
-
-            <div class="services-cards">
-              <div class="icon-cards">
-                <img
-                  src="../assets/icons/icon-landing.png"
-                  alt="icon picture"
+              <!-- email -->
+              <div class="form-group">
+                <label
+                  class="block text-xs mb-1.5 text-[#ccc] lg:text-sm lg:leading-7 lg:mb-3.5"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="w-full h-12 px-4 py-2 border border-[#252b37] rounded-xl bg-transparent outline-none placeholder:text-[#717680] lg:gap-2"
                 />
               </div>
-              <h2 class="services-h2">Landing Page Design</h2>
-              <span class="grey-text"
-                >High-converting landing pages for your product or
-                business.</span
-              >
-            </div>
-            <div class="services-cards">
-              <div class="icon-cards">
-                <img src="../assets/icons/icon-CMS.png" alt="icon picture" />
-              </div>
-              <h2 class="services-h2">CMS Integration</h2>
-              <span class="grey-text"
-                >Easy-to-manage websites with WordPress or Webflow.</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION Our Work -->
-    <section id="ourwork">
-      <div class="">
-        <div class="">
-          <h1>Our Work</h1>
-          <span class="">See what we’ve built with passion and purpose</span>
-        </div>
-        <div class="">
-          <div class="">
-            <img src="../assets/images/porto1.png" alt="porto image 1" />
-            <p>Portofolio 1</p>
-          </div>
-          <div class="">
-            <img src="../assets/images/porto2.png" alt="porto image 2" />
-            <p>Portofolio 2</p>
-          </div>
-          <div class="">
-            <img src="../assets/images/porto3.png" alt="porto image 3" />
-            <p>Portofolio 3</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION Meet The Team -->
-    <section id="meettheteam">
-      <div class="">
-        <div class="">
-          <h1>Meet the Team</h1>
-          <span class="">A group of future-ready tech makers.</span>
-        </div>
-
-        <div class="">
-          <div class="">
-            <div class="">
-              <img
-                src="../assets/images/member Jasper kim.png"
-                alt="member picture"
-              />
-              <div class="">
-                <h4>Jasper Kim</h4>
-                <span class="">Project Manager</span>
+              <!-- message -->
+              <div class="form-group">
+                <label
+                  class="block text-xs mb-1.5 text-[#ccc] lg:text-sm lg:leading-7 lg:mb-3.5"
+                  >Message</label
+                >
+                <textarea
+                  placeholder="Enter your message"
+                  class="w-full h-33.5 px-4 py-2 border border-[#252b37] rounded-xl bg-transparent outline-none resize-none placeholder:text-[#717680] lg:gap-2"
+                ></textarea>
               </div>
             </div>
-            <div class="">
-              <img
-                src="../assets/images/member Alex Jonathan.png"
-                alt="member picture"
-              />
-              <div class="">
-                <h4>Alex Jonathan</h4>
-                <span class="">Full-stack Developer</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="">
-            <div class="">
-              <img
-                src="../assets/images/member Mario Lopez.png"
-                alt="member picture"
-              />
-              <div class="">
-                <h4>Mario Lopez</h4>
-                <span class="">UI/UX Designer</span>
-              </div>
-            </div>
-            <div class="">
-              <img
-                src="../assets/images/member Jasper Kim 2.png"
-                alt="member picture"
-              />
-              <div class="">
-                <h4>Jasper Kim</h4>
-                <span class="">Data Scientist</span>
-              </div>
-            </div>
+            <button
+              class="w-full h-11 rounded-full p-2 gap-1 bg-[#421ABC] text-sm font-semibold leading-7 mb-4.5"
+            >
+              Send
+            </button>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- SECTION Collaboration -->
-    <section id="letscollaborate">
-      <div class="">
-        <div class="">
-          <h1>Let's Collaborate</h1>
-          <span class="">Need a tech team? We're ready to help</span>
-        </div>
-        <!-- FORM COLLABORATION -->
-        <div class="">
-          <div class="">
-            <div class="">
-              <label>Name</label>
-              <input type="text" placeholder="Enter your name" />
-            </div>
-
-            <div class="">
-              <label>Email</label>
-              <input type="email" placeholder="Enter your email" />
-            </div>
-
-            <div class="">
-              <label>Message</label>
-              <textarea placeholder="Enter your message"></textarea>
-            </div>
-          </div>
-          <button class="" style="height: 44px">Send</button>
-        </div>
-      </div>
-    </section>
+      </section>
+      <!-- SECTION LETS COLLAB DONE RESPONSIVE -->
+    </main>
 
     <!-- ========== FOOTER ========== -->
     <section id="footer">
-      <span class="">© 2025 Web Programming Hack. All rights reserved.</span>
-      <!-- <a
-        href="https://www.instagram.com/mav.ishak/"
-        style="text-decoration: none"
-        >My Instagram</a
-      > -->
+      <span
+        class="grey-text flex flex-row justify-center text-center self-center w-full border-t border-t-[#252B37] border-solid px-2 py-6 gap-2 text-xs leading-6 lg:text-[16px] lg:leading-7.5 lg:tracking-[-0.03]"
+        >© 2025 Web Programming Hack. All rights reserved.</span
+      >
+      <!-- FOOTER DONE RESPONSIVE -->
     </section>
   </body>
 </html>
