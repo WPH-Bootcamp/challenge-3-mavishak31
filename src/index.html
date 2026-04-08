@@ -15,7 +15,7 @@
     />
   </head>
   <body
-    class="bg-black text-[#FDFDFD] w-full box-border text-sm lg:text-lg lg:text-2xl font-sans"
+    class="bg-black text-[#FDFDFD] w-full box-border text-sm md:text-lg lg:text-2xl font-sans scroll-smooth"
   >
     <!-- flex flex-col lg:flex-row lg:flex-row -->
     <!-- ========== NAVBAR ========== -->
@@ -33,10 +33,10 @@
           <ul
             class="hidden lg:flex lg:flex-row lg:justify-between items-center gap-3"
           >
-            <li class="navlist">About</li>
-            <li class="navlist">Service</li>
-            <li class="navlist">Our Work</li>
-            <li class="navlist">Team</li>
+            <li class="navlist"><a href="#about">About</a></li>
+            <li class="navlist"><a href="#services">Service</a></li>
+            <li class="navlist"><a href="#ourwork">Our Work</a></li>
+            <li class="navlist"><a href="#team">Team</a></li>
           </ul>
         </nav>
         <!-- BUTTON CONTACT US HEADER -->
@@ -63,7 +63,7 @@
     <!-- ========== HERO SECTION ========== -->
     <section
       id="hero"
-      class="w-full px-5 pt-10 gap-4.5 items-center bg-linear-to-t from-[#210A5E4D] to-black flex flex-col lg:flex-row lg:flex-row lg:px-35"
+      class="w-full px-5 pt-10 gap-4.5 items-center bg-linear-to-t from-[#210A5E4D] to-black flex flex-col lg:flex lg:flex-row lg:px-35"
     >
       <div class="gap-6 lg:w-171.75 lg:gap-12">
         <h1
@@ -124,10 +124,18 @@
         <ul
           class="absolute flex flex-col w-90.25 mt-5 ml-4 gap-3 text-sm leading-7"
         >
-          <li class="sidelist"><span class="ml-3">About</span></li>
-          <li class="sidelist"><span class="ml-3">Service</span></li>
-          <li class="sidelist"><span class="ml-3">Our Work</span></li>
-          <li class="sidelist"><span class="ml-3">Team</span></li>
+          <li class="sidelist">
+            <span class="ml-3"><a href="#about">About</a></span>
+          </li>
+          <li class="sidelist">
+            <span class="ml-3"><a href="#services">Service</a></span>
+          </li>
+          <li class="sidelist">
+            <span class="ml-3"><a href="#ourwork">Our Work</a></span>
+          </li>
+          <li class="sidelist">
+            <span class="ml-3"><a href="#team">Team</a></span>
+          </li>
 
           <button
             class="w-full h-12 font-semibold text-sm leading-7 bg-[#421ABC] rounded-full p-2 gap-1"
@@ -142,7 +150,7 @@
     <!-- MAIN SECTION -->
     <main>
       <!-- Section Who We Are -->
-      <section id="whoweare">
+      <section id="about">
         <div
           class="flex flex-col text-center px-5 py-10 gap-4 lg:px-35 lg:py-20 lg:gap-8"
         >
@@ -167,7 +175,7 @@
 
       <!-- SECTION What We Do -->
       <!-- pada what we do content saya sesuaikan dengan figma width nya fixed n tidak full dan center nya sesuai juga, jadi tidak pas di tengah banget untuk tampilan mobile nya -->
-      <section id="whatwedo">
+      <section id="services">
         <!-- WHAT WE DO CONTAINER -->
         <div
           class="flex flex-col w-95 px-4 py-10 gap-6 lg:w-full lg:flex lg:flex-col lg:px-35 lg:py-20 lg:gap-16"
@@ -344,7 +352,7 @@
       <!-- SECTION OUR WORK DONE RESPONSIVE -->
 
       <!-- SECTION Meet The Team -->
-      <section id="meettheteam">
+      <section id="team">
         <div
           class="flex flex-col w-98.25 px-5 py-10 gap-8 lg:w-full lg:text-center lg:px-35 lg:py-20 lg:gap-16"
         >
